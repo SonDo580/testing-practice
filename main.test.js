@@ -93,3 +93,27 @@ test("Shift 29 character", () => {
   expect(caesarCipher("The zoo!", 29)).toBe("Wkh crr!");
 });
 // END TEST caesarCipher
+
+// TEST analyzeArray
+test("Empty array", () => {
+  expect(analyzeArray([])).toEqual(null);
+});
+
+test("1-char array", () => {
+  expect(analyzeArray([3])).toEqual({
+    average: 3,
+    min: 3,
+    max: 3,
+    length: 1,
+  });
+});
+
+test("Normal array", () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6])).toEqual({
+    average: 4,
+    min: 1,
+    max: 8,
+    length: 6,
+  });
+});
+// END TEST analyzeArray
