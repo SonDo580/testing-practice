@@ -24,7 +24,9 @@ const calculator = {
     return x - y;
   },
   divide() {},
-  multiply() {},
+  multiply(x, y) {
+    return x * y;
+  },
 };
 
 function caesarCipher() {}
