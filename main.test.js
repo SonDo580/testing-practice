@@ -63,7 +63,15 @@ test("Multiply integer", () => {
   expect(calculator.multiply(5, 4)).toBe(20);
 });
 
-test("Multiply float", () => {
-  expect(calculator.multiply(0.3, 0.2)).toBeCloseTo(0.06);
+test("Devide by 0", () => {
+  expect(calculator.divide(3, 0)).toBe(NaN);
+});
+
+test("Devide integer", () => {
+  expect(calculator.divide(3, 4)).toBeCloseTo(0.75);
+});
+
+test("Devide float", () => {
+  expect(calculator.divide(0.8, 4)).toBeCloseTo(0.2);
 });
 // END TEST calculator
