@@ -17,7 +17,9 @@ function reverseString(str) {
 }
 
 const calculator = {
-  add() {},
+  add(x, y) {
+    return x + y;
+  },
   subtract() {},
   divide() {},
   multiply() {},
