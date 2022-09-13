@@ -35,7 +35,12 @@ const calculator = {
   },
 };
 
-function caesarCipher() {}
+function caesarCipher(str, shift) {
+  if (str.trim() === "") {
+    return str;
+  }
+}
+
 function analyzeArray() {}
 
 export { capitalize, reverseString, calculator, caesarCipher, analyzeArray };
