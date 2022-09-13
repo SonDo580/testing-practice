@@ -41,7 +41,11 @@ function caesarCipher(str, shift) {
   }
 
   let arrChar = str.split("");
-  let encArrChar = arrChar.map((char) => {});
+  let encArrChar = arrChar.map((char) => {
+    if (!_isLetter(char)) {
+      return char;
+    }
+  });
 }
 
 function _isLetter(char) {
