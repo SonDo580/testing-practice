@@ -10,6 +10,10 @@ test("Empty string", () => {
   expect(capitalize("")).toBe("");
 });
 
+test("All space characters", () => {
+  expect(capitalize("   ")).toBe("");
+});
+
 test("Non-alphabet characters", () => {
   expect(capitalize("!duck")).toBe("!duck");
 });
