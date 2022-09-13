@@ -72,6 +72,8 @@ function _shiftChar(char, shift) {
       newCharCode = 65 + (newCharCode - 90);
     }
   }
+
+  return String.fromCharCode(newCharCode);
 }
 
 function analyzeArray() {}
