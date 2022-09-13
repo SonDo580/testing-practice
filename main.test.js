@@ -86,10 +86,10 @@ test("Shift 1 character", () => {
 });
 
 test("Shift 3 character", () => {
-  expect(caesarCipher("The zoo!", 3)).toBe("Wlh crr!");
+  expect(caesarCipher("The zoo!", 3)).toBe("Wkh crr!");
 });
 
 test("Shift 29 character", () => {
-  expect(caesarCipher("The zoo!", 29)).toBe("Wlh crr!");
+  expect(caesarCipher("The zoo!", 29)).toBe("Wkh crr!");
 });
 // END TEST caesarCipher
