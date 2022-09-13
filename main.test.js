@@ -78,18 +78,18 @@ test("Devide float", () => {
 
 // TEST caesarCipher
 test("Encode empty string", () => {
-  expect(caesarCipher("")).toBe("");
+  expect(caesarCipher("", 3)).toBe("");
 });
 
 test("Shift 1 character", () => {
-  expect(caesarCipher("The zoo?")).toBe("Uif app?");
+  expect(caesarCipher("The zoo?", 1)).toBe("Uif app?");
 });
 
 test("Shift 3 character", () => {
-  expect(caesarCipher("The zoo!")).toBe("Wlh crr!");
+  expect(caesarCipher("The zoo!", 3)).toBe("Wlh crr!");
 });
 
 test("Shift 29 character", () => {
-  expect(caesarCipher("The zoo!")).toBe("Wlh crr!");
+  expect(caesarCipher("The zoo!", 29)).toBe("Wlh crr!");
 });
 // END TEST caesarCipher
