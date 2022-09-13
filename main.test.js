@@ -75,3 +75,17 @@ test("Devide float", () => {
   expect(calculator.divide(0.8, 4)).toBeCloseTo(0.2);
 });
 // END TEST calculator
+
+// TEST caesarCipher
+test("Shift 1 character", () => {
+  expect(caesarCipher("The zoo?")).toBe("Uif app?");
+});
+
+test("Shift 3 character", () => {
+  expect(caesarCipher("The zoo!")).toBe("Wlh crr!");
+});
+
+test("Shift 29 character", () => {
+  expect(caesarCipher("The zoo!")).toBe("Wlh crr!");
+});
+// END TEST caesarCipher
