@@ -47,6 +47,7 @@ function caesarCipher(str, shift) {
     if (!_isLetter(char)) {
       return char;
     }
+    return _shiftChar(char, shift);
   });
 }
 
