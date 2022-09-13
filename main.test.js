@@ -48,6 +48,6 @@ test("Add integer", () => {
 });
 
 test("Add float", () => {
-  expect(calculator.add(0.1, 0.2)).toBe(3);
+  expect(calculator.add(0.1, 0.2)).toBeCloseTo(0.3);
 });
 // END TEST calculator
