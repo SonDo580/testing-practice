@@ -50,4 +50,12 @@ test("Add integer", () => {
 test("Add float", () => {
   expect(calculator.add(0.1, 0.2)).toBeCloseTo(0.3);
 });
+
+test("Subtract integer", () => {
+  expect(calculator.subtract(1, 4)).toBe(-3);
+});
+
+test("Subtract float", () => {
+  expect(calculator.add(0.1, 0.2)).toBeCloseTo(-0.1);
+});
 // END TEST calculator
