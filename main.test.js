@@ -41,3 +41,13 @@ test("Reverse string", () => {
   expect(reverseString("Iron Man")).toBe("naM norI");
 });
 // END TEST reverseString
+
+// TEST calculator
+test("Add integer", () => {
+  expect(calculator.add(-1, 4)).toBe(3);
+});
+
+test("Add float", () => {
+  expect(calculator.add(0.1, 0.2)).toBe(3);
+});
+// END TEST calculator
