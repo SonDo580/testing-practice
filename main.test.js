@@ -30,14 +30,14 @@ test("Need capitalize", () => {
 
 // TEST reverseString
 test("Reverse empty string", () => {
-  expect(reverseString("").toBe(""));
+  expect(reverseString("")).toBe("");
 });
 
 test("Reverse 1-character string", () => {
-  expect(reverseString("a").toBe("a"));
+  expect(reverseString("a")).toBe("a");
 });
 
 test("Reverse string", () => {
-  expect(reverseString("Iron Man").toBe("naM norI"));
+  expect(reverseString("Iron Man")).toBe("naM norI");
 });
 // END TEST reverseString
