@@ -40,6 +40,8 @@ function caesarCipher(str, shift) {
     return str;
   }
 
+  shift = shift % 26; // There're 26 letters
+
   let arrChar = str.split("");
   let encArrChar = arrChar.map((char) => {
     if (!_isLetter(char)) {
