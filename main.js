@@ -39,6 +39,9 @@ function caesarCipher(str, shift) {
   if (str.trim() === "") {
     return str;
   }
+
+  let arrChar = str.split("");
+  let encArrChar = arrChar.map((char) => {});
 }
 
 function analyzeArray() {}
