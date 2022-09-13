@@ -49,6 +49,8 @@ function caesarCipher(str, shift) {
     }
     return _shiftChar(char, shift);
   });
+
+  return encArrChar.join("");
 }
 
 function _isLetter(char) {
