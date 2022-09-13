@@ -56,6 +56,6 @@ test("Subtract integer", () => {
 });
 
 test("Subtract float", () => {
-  expect(calculator.add(0.1, 0.2)).toBeCloseTo(-0.1);
+  expect(calculator.subtract(0.1, 0.2)).toBeCloseTo(-0.1);
 });
 // END TEST calculator
