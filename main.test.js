@@ -58,4 +58,12 @@ test("Subtract integer", () => {
 test("Subtract float", () => {
   expect(calculator.subtract(0.1, 0.2)).toBeCloseTo(-0.1);
 });
+
+test("Multiply integer", () => {
+  expect(calculator.multiply(5, 4)).toBe(20);
+});
+
+test("Multiply float", () => {
+  expect(calculator.multiply(0.3, 0.2)).toBeCloseTo(0.06);
+});
 // END TEST calculator
