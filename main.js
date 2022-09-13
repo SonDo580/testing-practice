@@ -10,7 +10,7 @@ function capitalize(str) {
 
 function reverseString(str) {
   if (str === "" || str.length === 1) {
-    return "";
+    return str;
   }
 
   return str.split("").reverse().join("");
