@@ -8,7 +8,13 @@ function capitalize(str) {
   return arrChar.join("");
 }
 
-function reverseString() {}
+function reverseString(str) {
+  if (str === "" || str.length === 1) {
+    return "";
+  }
+
+  return str.split("").reverse().join("");
+}
 
 const calculator = {
   add() {},
