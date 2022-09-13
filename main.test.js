@@ -77,6 +77,10 @@ test("Devide float", () => {
 // END TEST calculator
 
 // TEST caesarCipher
+test("Encode empty string", () => {
+  expect(caesarCipher("")).toBe("");
+});
+
 test("Shift 1 character", () => {
   expect(caesarCipher("The zoo?")).toBe("Uif app?");
 });
