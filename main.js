@@ -55,6 +55,11 @@ function _isLetter(char) {
   return letterRegex.test(char);
 }
 
+function _shiftChar(char, shift) {
+  let charCode = char.charCodeAt(0);
+  let newCharCode = charCode + shift;
+}
+
 function analyzeArray() {}
 
 export { capitalize, reverseString, calculator, caesarCipher, analyzeArray };
