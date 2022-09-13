@@ -58,6 +58,20 @@ function _isLetter(char) {
 function _shiftChar(char, shift) {
   let charCode = char.charCodeAt(0);
   let newCharCode = charCode + shift;
+
+  if (charCode >= 97 && charCode <= 122) {
+    // lowercase letter
+    if (newCharCode > 122) {
+      newCharCode = 97 + (newCharCode - 122);
+    }
+  }
+
+  if (charCode >= 65 && charCode <= 90) {
+    // uppercase letter
+    if (newCharCode > 90) {
+      newCharCode = 65 + (newCharCode - 90);
+    }
+  }
 }
 
 function analyzeArray() {}
