@@ -44,6 +44,11 @@ function caesarCipher(str, shift) {
   let encArrChar = arrChar.map((char) => {});
 }
 
+function _isLetter(char) {
+  const letterRegex = /[A-Za-z]/;
+  return letterRegex.test(char);
+}
+
 function analyzeArray() {}
 
 export { capitalize, reverseString, calculator, caesarCipher, analyzeArray };
