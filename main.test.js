@@ -125,7 +125,7 @@ test("Normal array", () => {
 test("Average is float", () => {
   let object = analyzeArray([1, 3, 7]);
   let wantedObject = {
-    average: 5.5,
+    average: 3.67,
     min: 1,
     max: 7,
     length: 3,
