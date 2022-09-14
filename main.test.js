@@ -121,4 +121,13 @@ test("Normal array", () => {
     length: 6,
   });
 });
+
+test("Average is float", () => {
+  expect(analyzeArray([1, 3, 7])).toEqualWithFloats({
+    average: 5.5,
+    min: 1,
+    max: 7,
+    length: 3,
+  });
+});
 // END TEST analyzeArray
