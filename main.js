@@ -79,6 +79,11 @@ function _shiftChar(char, shift) {
   return String.fromCharCode(newCharCode);
 }
 
-function analyzeArray() {}
+function analyzeArray(arr) {
+  // arr only contains numbers
+  if (arr.length === 0) {
+    return null;
+  }
+}
 
 export { capitalize, reverseString, calculator, caesarCipher, analyzeArray };
