@@ -102,7 +102,7 @@ function analyzeArray(arr) {
   }
 
   let sum = arr.reduce((total, num) => {
-    return total + sum;
+    return total + num;
   }, 0);
 
   let average = sum / length;
