@@ -84,6 +84,15 @@ function analyzeArray(arr) {
   if (arr.length === 0) {
     return null;
   }
+
+  if (arr.length === 1) {
+    return {
+      average: arr[0],
+      min: arr[0],
+      max: arr[0],
+      length: 1,
+    };
+  }
 }
 
 export { capitalize, reverseString, calculator, caesarCipher, analyzeArray };
