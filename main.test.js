@@ -96,10 +96,15 @@ test("Shift 29 character", () => {
 
 // TEST analyzeArray
 test("Empty array", () => {
-  expect(analyzeArray([])).toEqual(null);
+  expect(analyzeArray([])).toEqual({
+    average: null,
+    min: null,
+    max: null,
+    length: 0,
+  });
 });
 
-test("1-char array", () => {
+test("1-element array", () => {
   expect(analyzeArray([3])).toEqual({
     average: 3,
     min: 3,
