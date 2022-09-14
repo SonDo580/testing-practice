@@ -81,11 +81,18 @@ function _shiftChar(char, shift) {
 
 function analyzeArray(arr) {
   // arr only contains numbers
-  if (arr.length === 0) {
-    return null;
+  const length = arr.length;
+
+  if (length === 0) {
+    return {
+      average: null,
+      min: null,
+      max: null,
+      length: 0,
+    };
   }
 
-  if (arr.length === 1) {
+  if (length === 1) {
     return {
       average: arr[0],
       min: arr[0],
