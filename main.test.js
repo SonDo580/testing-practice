@@ -123,11 +123,20 @@ test("Normal array", () => {
 });
 
 test("Average is float", () => {
-  expect(analyzeArray([1, 3, 7])).toEqualWithFloats({
+  let object = analyzeArray([1, 3, 7]);
+  let wantedObject = {
     average: 5.5,
     min: 1,
     max: 7,
     length: 3,
-  });
+  };
+
+  for (let key in object) {
+    if (key === "average") {
+      expect(object[key]).toBeCloseTo(wantedObject[key]);
+    } else {
+      expect(object[key]).toEqual(wantedObject[key]);
+    }
+  }
 });
 // END TEST analyzeArray
