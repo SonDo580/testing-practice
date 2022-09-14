@@ -100,6 +100,13 @@ function analyzeArray(arr) {
       length: 1,
     };
   }
+
+  return {
+    min: Math.min(...arr),
+    max: Math.max(...arr),
+    average: Math.average(...arr),
+    length,
+  };
 }
 
 export { capitalize, reverseString, calculator, caesarCipher, analyzeArray };
