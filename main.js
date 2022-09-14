@@ -101,10 +101,16 @@ function analyzeArray(arr) {
     };
   }
 
+  let sum = arr.reduce((total, num) => {
+    return total + sum;
+  }, 0);
+
+  let average = sum / length;
+
   return {
     min: Math.min(...arr),
     max: Math.max(...arr),
-    average: Math.average(...arr),
+    average,
     length,
   };
 }
